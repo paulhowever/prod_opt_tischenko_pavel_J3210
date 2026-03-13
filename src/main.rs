@@ -1,13 +1,7 @@
-mod scalar;
-mod constructive_number;
-mod objective;
-mod functions;
-mod optimizers;
-
-use constructive_number::ConstructiveNumber;
-use functions::{Quad4IllCond, Quad6WellCond, Rosenbrock3};
-use optimizers::{GradientDescent, NelderMead, NewtonMethod, OptimizeResult};
-use crate::objective::Objective;
+use lab1_met_opt::constructive_number::ConstructiveNumber;
+use lab1_met_opt::functions::{Quad4IllCond, Quad6WellCond, Rosenbrock3};
+use lab1_met_opt::objective::Objective;
+use lab1_met_opt::optimizers::{GradientDescent, NelderMead, NewtonMethod, OptimizeResult};
 
 fn print_section(title: &str) {
     println!("\n{}", "=".repeat(88));
