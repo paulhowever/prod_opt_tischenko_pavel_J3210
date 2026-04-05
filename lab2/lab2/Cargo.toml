@@ -1,0 +1,15 @@
+[package]
+name = "lab2_met_opt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lab1_met_opt = { path = "../../lab1/lab1" }
+
+[[bin]]
+name = "lab2_met_opt"
+path = "src/main.rs"
+
+[lib]
+name = "lab2_met_opt"
+path = "src/lib.rs"
