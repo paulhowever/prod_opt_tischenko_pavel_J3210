@@ -25,6 +25,7 @@
 
 # Generated PDFs for local report builds
 lab2/**/*.pdf
+!lab2/lab2/prod_opt_lab2-2.pdf
 
 # Ignore local report sources/scripts in lab2
 lab2/**/*.tex
