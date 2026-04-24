@@ -1,0 +1,34 @@
+# Rust build artifacts
+**/target/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Generated PDFs for local report builds
+lab2/**/*.pdf
+
+# Ignore local report sources/scripts in lab2
+lab2/**/*.tex
+lab2/**/*.py
+
+# Generic logs
+*.log.*
