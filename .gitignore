@@ -1,0 +1,18 @@
+**/target/
+.DS_Store
+**/.DS_Store
+
+lab3/**/*.pdf
+lab3/**/*.tex
+lab3/**/*.py
+
+# lab3: убрать всю документацию (.md) и локальные артефакты из репозитория
+lab3/**/*.md
+lab3/lab3/model.json
+lab3/lab3/model_d2.json
+lab3/lab3/bench_out/
+lab3/lab3/experiments/
+
+# локальные IDE и легаси-копия lab1 (есть исходный lab1/ на верхнем уровне)
+lab1/.idea/
+lab1/lab1/

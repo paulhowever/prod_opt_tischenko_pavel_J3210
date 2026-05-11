@@ -61,6 +61,7 @@ impl NelderMead {
                     func_calls,
                     grad_calls: 0,
                     path,
+                    path_iters: Vec::new(),
                 };
             }
 
@@ -150,6 +151,7 @@ impl NelderMead {
             func_calls,
             grad_calls: 0,
             path,
+            path_iters: Vec::new(),
         }
     }
 }
