@@ -7,6 +7,8 @@ pub struct OptimizeResult<T> {
     pub func_calls: usize,
     pub grad_calls: usize,
     pub path: Vec<Vec<T>>,
+    /// Параллельно `path`: номер шага оптимизации для снимка. Пустой вектор — шаги 0..path.len()-1.
+    pub path_iters: Vec<usize>,
 }
 
 pub struct NewtonMethod {
@@ -54,6 +56,7 @@ impl NewtonMethod {
                     func_calls,
                     grad_calls,
                     path,
+                    path_iters: Vec::new(),
                 };
             }
 
@@ -79,6 +82,7 @@ impl NewtonMethod {
             func_calls,
             grad_calls,
             path,
+            path_iters: Vec::new(),
         }
     }
 }

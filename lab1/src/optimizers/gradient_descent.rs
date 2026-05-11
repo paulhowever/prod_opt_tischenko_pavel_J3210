@@ -50,6 +50,7 @@ impl<T: Scalar> GradientDescent<T> {
                     func_calls,
                     grad_calls,
                     path,
+                    path_iters: Vec::new(),
                 };
             }
 
@@ -75,6 +76,7 @@ impl<T: Scalar> GradientDescent<T> {
             func_calls,
             grad_calls,
             path,
+            path_iters: Vec::new(),
         }
     }
 }

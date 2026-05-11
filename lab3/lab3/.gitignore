@@ -1,0 +1,7 @@
+# Локальные прогоны
+model.json
+model_d2.json
+bench_out/
+
+# Синтетический grid d3 — только локально
+experiments/

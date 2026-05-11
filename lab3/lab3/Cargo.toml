@@ -1,0 +1,20 @@
+[package]
+name = "lab3_met_opt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lab1_met_opt = { path = "../../lab1" }
+lab2_met_opt = { path = "../../lab2/lab2" }
+csv = "1"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[[bin]]
+name = "lab3_met_opt"
+path = "src/main.rs"
+
+[lib]
+name = "lab3_met_opt"
+path = "src/lib.rs"
